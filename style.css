@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.toolsContainer{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+}
+.menuBar{
+    height: 4rem;
+    width: 4rem;
+    background-color: #CAD3C8;
+    border-radius: 50%;
+}
+.tools{
+    height: 4rem;
+    width: 30vw;
+    left: calc((100vw - 30vw)/2);;
+    background-color: #CAD3C8;
+    display: none;
+    justify-content: space-around;
+    border-radius: 1rem;
+    animation-name: tools-animations;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}  
+.tools >*{
+    font-size: 2rem ;
+    width:14.28%;
+    margin:1rem 0rem 0rem 1rem;
+}
+.tools:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+i[class^="fa-"]{
+    cursor: pointer;
+}
+@keyframes tools-animations{
+    to{
+        transform: translateX(0rem);
+    }
+    from{
+        transform: translateX(26rem);
+    }
+}
+.fa-bars{
+    font-size: 2rem;
+    margin:1rem 0rem 0rem 1rem;
+}
+.fa-circle-xmark{
+    font-size: 2rem;
+    margin:1rem 0rem 0rem 1rem;
+}
+.black{
+    background-color: black;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.pink{
+    background-color: palevioletred;
+}
+.red{
+    background-color: red;
+}
+.color{
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+}
+.colorBox{
+    height: 5rem;
+    width: 7rem; 
+    background-color: #CAD3C8;
+    border-radius: 1rem;
+    display: none;
+    position: absolute;
+    margin-top: 1.2rem;
+    left: 0;
+    border-radius: 1rem;
+}
+.colorFirstRow, .colorSecondRow{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
